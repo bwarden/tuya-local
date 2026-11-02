@@ -1,0 +1,117 @@
+name: Robot vacuum
+products:
+  - id: paapxs4vudcncsb9
+    manufacturer: Eufy
+    model: G30 Edge
+entities:
+  - entity: vacuum
+    dps:
+      - id: 1
+        type: boolean
+        name: power
+        optional: true
+      - id: 2
+        type: boolean
+        name: activate
+        optional: true
+      - id: 5
+        type: string
+        name: mode
+        optional: true
+        hidden: true
+      - id: 15
+        type: string
+        name: status
+        mapping:
+          - dps_val: Charging
+            value: charging
+          - dps_val: completed
+            value: charged
+          - dps_val: Running
+            value: cleaning
+          - dps_val: standby
+            value: standby
+          - dps_val: Recharge
+            value: returning
+          - dps_val: Sleeping
+            value: sleep
+          - dps_val: recharge_needed
+            value: recharge_needed
+      - id: 102
+        type: string
+        name: fan_speed
+        mapping:
+          - dps_val: Standard
+            value: standard
+          - dps_val: Turbo
+            value: turbo
+          - dps_val: Max
+            value: max
+          - dps_val: Boost_IQ
+            value: boost_iq
+      - id: 103
+        type: boolean
+        name: locate
+        optional: true
+      - id: 104
+        type: integer
+        name: battery
+        optional: true
+      - id: 106
+        type: integer
+        name: error
+        optional: true
+  - entity: sensor
+    class: battery
+    category: diagnostic
+    dps:
+      - id: 104
+        type: integer
+        name: sensor
+        unit: "%"
+
+  - entity: binary_sensor
+    class: problem
+    category: diagnostic
+    dps:
+      - id: 106
+        type: integer
+        name: sensor
+        mapping:
+          - dps_val: 0
+            value: false
+          - value: true
+
+  - entity: sensor
+    class: duration
+    category: diagnostic
+    dps:
+      - id: 109
+        type: integer
+        name: sensor
+        unit: min
+
+  - entity: sensor
+    name: Cleaning area
+    category: diagnostic
+    dps:
+      - id: 110
+        type: integer
+        name: sensor
+        unit: m²
+
+  - entity: switch
+    name: Do not disturb
+    category: config
+    dps:
+      - id: 107
+        type: boolean
+        name: switch
+
+  - entity: switch
+    name: Auto return
+    category: config
+    dps:
+      - id: 135
+        type: boolean
+        name: switch
