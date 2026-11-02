@@ -16,9 +16,21 @@ entities:
         optional: true
       - id: 5
         type: string
-        name: mode
+        name: command
         optional: true
-        hidden: true
+        mapping:
+          - dps_val: Spot
+            value: clean_spot
+          - dps_val: null
+            value: return_to_base
+            value_redirect: return_home
+      - id: 101
+        type: boolean
+        name: return_home
+        optional: true
+        mapping:
+          - dps_val: true
+            value: return_to_base
       - id: 15
         type: string
         name: status
@@ -42,13 +54,13 @@ entities:
         name: fan_speed
         mapping:
           - dps_val: Standard
-            value: standard
+            value: Standard
           - dps_val: Turbo
-            value: turbo
+            value: Turbo
           - dps_val: Max
-            value: max
+            value: Max
           - dps_val: Boost_IQ
-            value: boost_iq
+            value: Boost IQ
       - id: 103
         type: boolean
         name: locate
