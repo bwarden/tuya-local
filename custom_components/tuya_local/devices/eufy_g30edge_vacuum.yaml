@@ -14,6 +14,19 @@ entities:
         type: boolean
         name: activate
         optional: true
+      - id: 3
+        type: string
+        name: direction_control
+        optional: true
+        mapping:
+          - dps_val: forward
+            value: forward
+          - dps_val: back
+            value: reverse
+          - dps_val: left
+            value: left
+          - dps_val: right
+            value: right
       - id: 5
         type: string
         name: command
@@ -21,6 +34,12 @@ entities:
         mapping:
           - dps_val: Spot
             value: clean_spot
+          - dps_val: Auto
+            value: auto
+          - dps_val: Edge
+            value: edge
+          - dps_val: SmallRoom
+            value: small_room
           - dps_val: null
             value: return_to_base
             value_redirect: return_home
