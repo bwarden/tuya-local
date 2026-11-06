@@ -36,6 +36,8 @@ entities:
             value: clean_spot
           - dps_val: Auto
             value: auto
+          - dps_val: Auto
+            value: start
           - dps_val: Edge
             value: edge
           - dps_val: SmallRoom
