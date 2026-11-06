@@ -55,6 +55,7 @@ entities:
       - id: 15
         type: string
         name: status
+        hidden: true
         mapping:
           - dps_val: Charging
             value: charging
