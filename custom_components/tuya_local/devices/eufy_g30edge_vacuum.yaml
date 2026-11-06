@@ -69,7 +69,7 @@ entities:
           - dps_val: Sleeping
             value: sleep
           - dps_val: recharge_needed
-            value: recharge needed
+            value: returning
       - id: 102
         type: string
         name: fan_speed
