@@ -12,15 +12,8 @@ entities:
         optional: true
       - id: 2
         type: boolean
-        name: activate
+        name: power
         optional: true
-        mapping:
-          - dps_val: true
-            value: true
-          - dps_val: false
-            value: false
-          - dps_val: false
-            value: stop
       - id: 3
         type: string
         name: direction_control
@@ -55,10 +48,6 @@ entities:
             value: auto
           - dps_val: auto
             value: auto
-          - dps_val: Auto
-            value: start
-          - dps_val: auto
-            value: start
           - dps_val: Edge
             value: edge
           - dps_val: edge
@@ -79,6 +68,15 @@ entities:
           - dps_val: null
             value: stop
             value_redirect: activate
+      - id: 122
+        type: string
+        name: activate
+        optional: true
+        mapping:
+          - dps_val: Continue
+            value: true
+          - dps_val: Pause
+            value: false
       - id: 101
         type: boolean
         name: return_home
