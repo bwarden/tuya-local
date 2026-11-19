@@ -62,10 +62,10 @@ entities:
             value: nosweep
           - dps_val: nosweep
             value: nosweep
-          - dps_val: null
+          - dps_val: Auto
             value: return_to_base
             value_redirect: return_home
-          - dps_val: null
+          - dps_val: Auto
             value: stop
             value_redirect: activate
       - id: 122
@@ -77,6 +77,8 @@ entities:
             value: true
           - dps_val: Pause
             value: false
+          - dps_val: Pause
+            value: stop
       - id: 101
         type: boolean
         name: return_home
