@@ -42,6 +42,8 @@ entities:
             value: edge
           - dps_val: SmallRoom
             value: small_room
+          - dps_val: Nosweep
+            value: nosweep
           - dps_val: null
             value: return_to_base
             value_redirect: return_home
