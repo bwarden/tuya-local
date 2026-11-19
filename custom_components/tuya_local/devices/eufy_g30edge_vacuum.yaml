@@ -69,6 +69,9 @@ entities:
           - dps_val: null
             value: return_to_base
             value_redirect: return_home
+          - dps_val: null
+            value: stop
+            value_redirect: return_home
       - id: 101
         type: boolean
         name: return_home
