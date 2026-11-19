@@ -42,15 +42,29 @@ entities:
         mapping:
           - dps_val: Spot
             value: clean_spot
+          - dps_val: spot
+            value: clean_spot
           - dps_val: Auto
+            value: auto
+          - dps_val: auto
             value: auto
           - dps_val: Auto
             value: start
+          - dps_val: auto
+            value: start
           - dps_val: Edge
+            value: edge
+          - dps_val: edge
             value: edge
           - dps_val: SmallRoom
             value: small_room
+          - dps_val: small_room
+            value: small_room
+          - dps_val: smallroom
+            value: small_room
           - dps_val: Nosweep
+            value: nosweep
+          - dps_val: nosweep
             value: nosweep
           - dps_val: null
             value: return_to_base
@@ -81,6 +95,20 @@ entities:
             value: sleep
           - dps_val: recharge_needed
             value: returning
+          - dps_val: charging
+            value: charging
+          - dps_val: completed
+            value: docked
+          - dps_val: running
+            value: cleaning
+          - dps_val: standby
+            value: standby
+          - dps_val: recharge
+            value: returning
+          - dps_val: sleeping
+            value: sleep
+          - dps_val: recharge_needed
+            value: returning
       - id: 102
         type: string
         name: fan_speed
@@ -92,6 +120,10 @@ entities:
           - dps_val: Max
             value: Max
           - dps_val: Boost_IQ
+            value: Boost IQ
+          - dps_val: boost_iq
+            value: Boost IQ
+          - dps_val: Boost IQ
             value: Boost IQ
       - id: 103
         type: boolean
