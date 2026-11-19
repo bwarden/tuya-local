@@ -22,11 +22,19 @@ entities:
           - dps_val: forward
             value: forward
           - dps_val: back
+            value: back
+          - dps_val: back
+            value: backward
+          - dps_val: back
             value: reverse
           - dps_val: left
             value: left
+          - dps_val: left
+            value: turn_left
           - dps_val: right
             value: right
+          - dps_val: right
+            value: turn_right
       - id: 5
         type: string
         name: command
