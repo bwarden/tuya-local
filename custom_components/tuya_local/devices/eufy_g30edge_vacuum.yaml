@@ -14,6 +14,13 @@ entities:
         type: boolean
         name: activate
         optional: true
+        mapping:
+          - dps_val: true
+            value: true
+          - dps_val: false
+            value: false
+          - dps_val: false
+            value: stop
       - id: 3
         type: string
         name: direction_control
@@ -71,7 +78,7 @@ entities:
             value_redirect: return_home
           - dps_val: null
             value: stop
-            value_redirect: return_home
+            value_redirect: activate
       - id: 101
         type: boolean
         name: return_home
